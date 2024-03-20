@@ -15,6 +15,9 @@ class Settings:
         )
         return v
 
+    SECRET_KEY: str
+    ALGORITHM: str
+    
     class Config:
         env_file = ".env"
 
