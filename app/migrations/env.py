@@ -8,10 +8,9 @@ from app.hotels.models import Hotels
 import sys
 from os.path import abspath, dirname
 from logging.config import fileConfig
-from app.config import settings
+from config import settings
 
 sys.path.insert(0, dirname(dirname(dirname(abspath(__file__)))))
-
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

@@ -2,8 +2,8 @@ from fastapi import APIRouter, HTTPException, status, Response
 from app.users.schemas import SUserAuth
 from app.users.dao import UsersDAO
 from app.users.auth import get_password_hash, verify_password
-from users.auth import authenticate_user
-from users.auth import create_access_token
+from app.users.auth import authenticate_user
+from app.users.auth import create_access_token
 
 router = APIRouter(
     prefix="/auth",

@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 router = APIRouter(
     prefix="/bookings",
@@ -7,8 +7,8 @@ router = APIRouter(
 
 
 @router.get("/bookings")
-def get_bookings():
-    pass
+def get_bookings(request: Request):
+    return dir(request)
 
 
 @router.get("/{booking_id}")

@@ -3,8 +3,8 @@ import uvicorn
 from typing import Optional
 from datetime import date
 from pydantic import BaseModel
-from bookings.router import router as router_bookings
-from users.router import router as router_users
+from app.bookings.router import router as router_bookings
+from app.users.router import router as router_users
 
 app = FastAPI()
 
