@@ -33,16 +33,5 @@ def get_hotels(search_args: HotelSearchArgs = Depends()):
     return search_args
 
 
-class SBookin(BaseModel):
-    room_id: int
-    date_from: date
-    date_to: date
-
-
-@app.post("/bookings")
-def add_booking(booking: SBookin):
-    pass
-
-
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
